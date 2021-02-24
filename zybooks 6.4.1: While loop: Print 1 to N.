@@ -21,3 +21,25 @@ while i <= user_num:
     print (i)
     i += 1
     
+# The next question also gave me some trouble
+#Retype and run, note incorrect behavior. Then fix errors in the code, which should print num_stars asterisks.
+
+#while num_printed != num_stars:
+    print('*')
+
+#Sample output for the correct program when num_stars is 3:
+
+#*
+#*
+#*
+
+# I tried the same tactics as above however in this case they gave me an extra asterisk that was not needed
+# The solution is below
+
+num_stars = 3
+num_printed = 0
+
+while num_stars > num_printed:
+    print('*')
+    num_printed += 1
+  
