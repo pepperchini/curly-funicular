@@ -1,0 +1,23 @@
+#Write a while loop that prints from 1 to user_num. Sample output for the given program:
+
+#1
+#2
+#3
+#4
+
+#Initially I made the while loop like this: while user_num >= i:
+#However that caused an infinite loop. I think because i wasn't being updated after each loop.
+# There are several ways to solve this problem 
+
+i = 1
+user_num = 4 # Assume positive
+
+while user_num >= i: #keeps incrementing i until it reaches 4
+    print (i)
+    i += 1
+
+#Another way to solve the problem
+while i <= user_num:
+    print (i)
+    i += 1
+    
