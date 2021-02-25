@@ -1,0 +1,24 @@
+#Write a for loop to print each contact in contact_emails. Sample output for the given program:
+
+#mike.filt@bmail.com is Mike Filt
+#s.reyn@email.com is Sue Reyn
+#narty042@nmail.com is Nate Arty
+
+contact_emails = {
+    'Sue Reyn' : 's.reyn@email.com',
+    'Mike Filt': 'mike.filt@bmail.com',
+    'Nate Arty': 'narty042@nmail.com'
+}
+
+for name, email in contact_emails.items(): #for name (refers to the information on the left side of the :), email(refers to the info on the right side of :)
+	print(email, "is", name)
+  
+#The process above splits the dictionary into two variables which can be referenced in the print function.
+
+#Another way to solve this is by using the placeholder % feature
+
+for name in contact_emails: 
+	print('%s is %s' % (contact_emails[name], name))
+  
+#By putting contact_emails[name] first it's going to pull what is on the right side of the key pair first
+#Then we put ,name after that so it can pull the first key which is on the left
