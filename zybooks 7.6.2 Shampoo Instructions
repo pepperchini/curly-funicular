@@ -1,0 +1,21 @@
+#Write a function shampoo_instructions() with parameter num_cycles. 
+#If num_cycles is less than 1, print "Too few.". If more than 4, print "Too many.". 
+#Else, print "N : Lather and rinse." num_cycles times, where N is the cycle number, followed by "Done.". 
+#Sample output for the given program:
+
+#1 : Lather and rinse.
+#2 : Lather and rinse.
+#Done.
+ 
+def shampoo_instructions(num_cycles):
+    
+    if num_cycles < 1:
+        print('Too few.')
+    elif num_cycles > 4:
+        print('Too many.')
+    else:
+        x = 1 #Create this variable to set the initial number at 1
+        while x <= num_cycles:
+            print(x, ': Lather and rinse.')
+            x += 1 #Don't forget to increment
+        print('Done.')
