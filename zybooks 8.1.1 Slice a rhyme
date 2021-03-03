@@ -1,0 +1,12 @@
+#Assign sub_lyric with 'cow' by slicing rhyme_lyric from start_index to end_index. 
+#Sample output from given program:
+
+#cow
+
+start_index = 4
+end_index = 7
+rhyme_lyric = 'The cow jumped over the moon.'
+#Initially I put in [4:7] as my solution but the programd didn't return 'jumped' when it ran.
+#The solution was as simply as [start_index:end_index] because they already had values associated with them. 
+sub_lyric = rhyme_lyric[start_index:end_index]
+print(sub_lyric)
