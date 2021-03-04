@@ -1,0 +1,43 @@
+
+#Task 1
+
+#Complete the function to print the first X number of characters in the given string
+
+# Complete the function to print the first X number of characters in the given string
+def printFirst(mystring, x):
+# Student code goes here
+ 
+# expected output: WGU
+printFirst('WGU College of IT', 3)    
+ 
+# expected output: WGU College
+printFirst('WGU College of IT', 11)
+
+#Solution:
+def printFirst(mystring, x):
+    print(mystring[0:x])           #0:x starts at the beginning and stops at x
+ 
+# expected output: WGU
+printFirst('WGU College of IT', 3)    
+ 
+# expected output: WGU College
+printFirst('WGU College of IT', 11)
+
+
+#Task 2
+
+#Complete the function to return the last X number of characters in the given string
+
+# Complete the function to return the last X number of characters
+# in the given string
+def getLast(mystring, x):
+# Student code goes here
+  return mystring[-x:]               ##Was printing 'None' because initially I had two print functions. Return gets around that. -x: starts counting from the back.
+ 
+# expected output: IT
+print(getLast('WGU College of IT', 2))
+ 
+# expected output: College of IT
+print(getLast('WGU College of IT', 13))
+
+
