@@ -140,3 +140,16 @@ displayHourlyRate(34.789123)
  
 # expected output: $24.12
 displayHourlyRate(24.123456)
+
+# Task 10 INCOMPLETE!!!!
+# Complete the function to return the number of uppercase letters in the given string
+def countUpper(mystring):
+    alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+    alphabet = alphabet.split()
+    count(alphabet)
+ 
+# expected output: 4
+print(countUpper('Welcome to WGU'))
+ 
+# expected output: 2
+print(countUpper('Hello, Mary'))
