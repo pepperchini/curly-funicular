@@ -116,13 +116,16 @@ print(removeWGU('WGU Rocks'))
 # expected output: Hello, John
 print(removeWGU('Hello, WGUJohn'))
 
-#Task 8  INCOMPLETE!!!
+#Task 8  
 # Complete the function to remove trailing spaces from the first string
 # and leading spaces from the second string and return the combined strings
 def removeSpaces(string1, string2):
-    string1 = string1.strip()
-    string2 = string2.strip()
-    return (string1, string2)
+    # rstrip to remove rear spaces from string1
+    string1 = string1.rstrip() 
+    # lstripo to remove leading spaces from string 2
+    string2 = string2.lstrip()
+    # also can use + to cat but .format is better
+    return '{}{}'.format(string1, string2)
     
 # expected output: WGU Rocks-You know it!
 print(removeSpaces('WGU Rocks    ', '  -You know it!'))
@@ -144,10 +147,15 @@ displayHourlyRate(24.123456)
 # Task 10 INCOMPLETE!!!!
 # Complete the function to return the number of uppercase letters in the given string
 def countUpper(mystring):
-    alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
-    alphabet = alphabet.split()
-    count(alphabet)
- 
+    #count goes inside function
+    count = 0
+    #loops over mystring  and breaks it into individual letters 
+    for capchar in mystring:
+        #use isupper to loop over mystring letters
+        #then isupper can count total # of uppercase letters
+        if capchar.isupper():
+            count += 1
+    return count
 # expected output: 4
 print(countUpper('Welcome to WGU'))
  
