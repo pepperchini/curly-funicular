@@ -144,7 +144,7 @@ displayHourlyRate(34.789123)
 # expected output: $24.12
 displayHourlyRate(24.123456)
 
-# Task 10 INCOMPLETE!!!!
+# Task 10
 # Complete the function to return the number of uppercase letters in the given string
 def countUpper(mystring):
     #count goes inside function
